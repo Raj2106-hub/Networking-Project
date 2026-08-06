@@ -2,13 +2,31 @@
 
 ## Purpose
 
-Design and implement a multi-branch Wide Area Network (WAN) using dynamic routing to provide reliable communication between geographically separated branch offices.
+Design and implement a scalable multi-branch Wide Area Network (WAN) using OSPF dynamic routing to provide reliable communication between geographically separated branch offices.
 
 ---
 
 ## Project Description
 
-Designed and implemented a multi-branch enterprise WAN using **Cisco Packet Tracer**, connecting **Bangalore**, **Chennai**, and **Hyderabad** branch offices. Configured **OSPF (Open Shortest Path First)** for dynamic routing over serial WAN links, assigned IPv4 addressing for LAN and WAN networks, and established end-to-end connectivity between all branches. Network functionality was verified using **Ping**, **OSPF neighbor verification**, and routing table inspection.
+Designed and implemented a multi-branch enterprise WAN using **Cisco Packet Tracer**, connecting **Bangalore**, **Chennai**, and **Hyderabad** branch offices. Each branch contains an independent Local Area Network (LAN) connected through a Layer 2 switch. The branch routers are interconnected using **Serial DCE/DTE point-to-point links** to simulate WAN connectivity. Configured **OSPF (Open Shortest Path First)** as the dynamic routing protocol to automatically exchange routes between branches, enabling seamless communication across the enterprise network. Network connectivity and routing were verified using **Ping**, **OSPF neighbor verification**, and routing table inspection.
+
+---
+
+## WAN Architecture
+
+This project simulates a multi-branch enterprise WAN where branch offices communicate through dedicated WAN links.
+
+The routers are connected using **Serial DCE/DTE point-to-point links** in Cisco Packet Tracer. These serial links simulate dedicated WAN circuits between branch offices.
+
+In a real-world enterprise environment, organizations usually obtain WAN connectivity from an **Internet Service Provider (ISP)**. The ISP provides technologies such as:
+
+- MPLS VPN
+- Leased Lines
+- Metro Ethernet
+- SD-WAN
+- Dedicated Fiber Links
+
+In this project, **MPLS is not implemented** because Cisco Packet Tracer focuses on enterprise network configuration rather than service-provider infrastructure. Instead, **Serial DCE/DTE links represent the WAN circuits provided by an ISP**, allowing the project to demonstrate enterprise routing using OSPF while simulating real-world WAN connectivity.
 
 ---
 
@@ -18,7 +36,7 @@ Designed and implemented a multi-branch enterprise WAN using **Cisco Packet Trac
 - TCP/IP
 - IPv4
 - OSPF
-- Serial WAN Links
+- Serial DCE/DTE
 - Routing & Switching
 
 ---
@@ -43,9 +61,11 @@ Designed and implemented a multi-branch enterprise WAN using **Cisco Packet Trac
 - Serial Interface Configuration
 - Router Configuration
 - Switch Configuration
-- Routing Verification
+- Enterprise WAN Design
+- Network Verification
 - Ping
 - OSPF Neighbor Verification
+- Routing Table Analysis
 
 ---
 
@@ -75,6 +95,13 @@ Multi-Branch-WAN-Connectivity-Using-OSPF/
 
 ### Router Verification
 
+Includes:
+
+- OSPF Neighbor Status
+- Routing Table
+- OSPF Protocol Information
+- Interface Status
+
 ![Router Verification](screenshots/Router-Verification.png)
 
 ---
@@ -99,15 +126,17 @@ Multi-Branch-WAN-Connectivity-Using-OSPF/
 
 ## Network Features
 
-- Multi-Branch WAN Topology
+- Multi-Branch Enterprise WAN
 - OSPF Dynamic Routing
-- Serial WAN Connectivity
+- Area 0 Configuration
+- Serial DCE/DTE Point-to-Point WAN Links
 - IPv4 Addressing
 - Router-to-Router Communication
 - LAN-to-LAN Connectivity
-- End-to-End Network Communication
 - Dynamic Route Learning
-- Network Verification
+- Automatic Route Exchange
+- End-to-End Network Communication
+- Enterprise WAN Simulation
 
 ---
 
@@ -117,31 +146,32 @@ The following tests were performed successfully:
 
 - OSPF Neighbor Adjacency Verification
 - Routing Table Verification
+- OSPF Protocol Verification
 - Interface Status Verification
 - End-to-End Ping
 - Inter-Branch Connectivity Testing
+
+Verification Commands:
+
+```bash
+show ip interface brief
+show ip ospf neighbor
+show ip route
+show ip protocols
+show running-config
+```
 
 ---
 
 ## Result
 
-Successfully designed and deployed a multi-branch WAN connecting Bangalore, Chennai, and Hyderabad using OSPF dynamic routing. End-to-end communication between all branch LANs was successfully verified through Ping, routing table inspection, and OSPF neighbor verification, demonstrating reliable WAN connectivity and dynamic route exchange.
+Successfully designed and implemented a multi-branch enterprise WAN connecting Bangalore, Chennai, and Hyderabad using OSPF dynamic routing. The branch routers established stable OSPF neighbor relationships and dynamically exchanged routing information over simulated WAN links. End-to-end communication between all branch LANs was successfully verified through Ping, routing table inspection, and OSPF neighbor verification, demonstrating reliable enterprise WAN connectivity.
 
 ---
 
 ## Software
 
-- Cisco Packet Tracer 8.x or later
+- Cisco Packet Tracer 9.x (Compatible with 8.x or later)
 
----
 
-## Author
-
-**Rajkumar S**
-
-Interested in:
-- Enterprise Networking
-- Routing & Switching
-- Network Security
-- Linux Administration
 - Network Automation
