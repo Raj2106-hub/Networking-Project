@@ -17,6 +17,9 @@ Networking-Project/
 │   └── screenshots/
 │
 ├── 02-Multi-Branch-WAN-Connectivity-Using-OSPF/
+│   ├── README.md
+│   ├── Multi-Branch-WAN-Connectivity-Using-OSPF.pkt
+│   └── screenshots/
 │
 ├── 03-Network-Traffic-Monitoring-And-Packet-Analysis/
 │
@@ -42,7 +45,7 @@ Networking-Project/
 | No. | Project | Status |
 |:---:|---------|:------:|
 | 01 | Campus LAN Infrastructure Deployment | ✅ Completed |
-| 02 | Multi-Branch WAN Connectivity Using OSPF | 🚧 Planned |
+| 02 | Multi-Branch WAN Connectivity Using OSPF | ✅ Completed |
 | 03 | Network Traffic Monitoring and Packet Analysis | 🚧 Planned |
 | 04 | Enterprise Network Troubleshooting Lab | 🚧 Planned |
 | 05 | Enterprise Network Services Deployment | 🚧 Planned |
@@ -59,13 +62,13 @@ Networking-Project/
 - Cisco Packet Tracer
 - TCP/IP
 - IPv4
+- Subnetting
 - VLAN
 - IEEE 802.1Q Trunking
 - Router-on-a-Stick
 - Spanning Tree Protocol (STP)
 - OSPF
-- BGP (Concepts)
-- MPLS (Concepts)
+- Serial DCE/DTE WAN Links
 - DHCP
 - DNS
 - NAT
@@ -87,25 +90,26 @@ Networking-Project/
 # Skills Demonstrated
 
 - Enterprise LAN Design
+- Enterprise WAN Design
 - Routing & Switching
 - VLAN Configuration
 - Inter-VLAN Routing
 - IPv4 Addressing
-- Subnetting
+- Basic Subnetting
 - Dynamic Routing (OSPF)
-- Network Security
-- Firewall Configuration
-- DHCP & DNS
-- Linux Network Administration
+- WAN Configuration
+- Router & Switch Configuration
+- Network Verification
 - Network Troubleshooting
 - Packet Analysis
+- Linux Network Administration
 - Python Network Automation
 
 ---
 
 # Software Used
 
-- Cisco Packet Tracer 8.x or later
+- Cisco Packet Tracer 9.x (Compatible with 8.x or later)
 - Wireshark
 - pfSense
 - Ubuntu
@@ -118,17 +122,18 @@ Networking-Project/
 
 # About
 
-This repository documents my networking learning journey through practical projects. Each project includes:
+This repository documents my networking learning journey through practical networking labs and enterprise infrastructure projects. Each project includes:
 
 - Network topology diagrams
-- Configuration files
+- Configuration documentation
 - Cisco Packet Tracer (.pkt) files
 - Screenshots
-- Verification using Ping and Traceroute
-- Step-by-step documentation
+- Routing verification
+- Ping-based connectivity testing
+- Step-by-step implementation
 - Troubleshooting notes
 
-The goal of this repository is to demonstrate practical enterprise networking skills through real-world lab projects.
+The goal of this repository is to demonstrate practical enterprise networking skills through hands-on lab implementations and real-world networking concepts.
 
 ---
 
@@ -145,4 +150,5 @@ The goal of this repository is to demonstrate practical enterprise networking sk
 - Network Automation
 
 ---
+
 ⭐ If you find these projects helpful, feel free to star this repository.
