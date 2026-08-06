@@ -173,5 +173,3 @@ Successfully designed and implemented a multi-branch enterprise WAN connecting B
 
 - Cisco Packet Tracer 9.x (Compatible with 8.x or later)
 
-
-- Network Automation
